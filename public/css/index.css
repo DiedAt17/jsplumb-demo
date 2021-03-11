@@ -1,0 +1,108 @@
+#diagramContainer {
+  position: absolute;
+  padding: 20px;
+  top: 100px;
+  left: 148px;
+  width: 80%;
+  height: 800px;
+  border: 2px solid gray;
+  background-image: url('/images/gridding.jpg');
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+
+#app {
+  position: absolute;
+  top: 100px;
+  padding: 73px;
+  width: 80px;
+  height: 800px;
+  border: 2px solid gray;
+}
+
+.item {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background:seagreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:rgb(255, 255, 255)
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background:saddlebrown;
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:rgb(255, 255, 255)
+}
+
+.rhombus {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+	/* margin:40px 0 0 40px; */
+	/* -webkit-transform-origin:0 100%;
+	-moz-transform-origin:0 100%;
+	-o-transform-origin:0 100%;
+	-ms-transform-origin:0 100%;
+	transform-origin:0 100%; */
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	background:#E5C3B2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:rgb(255, 255, 255)
+}
+
+.button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+}
+
+/*css代码*/
+.select {
+  /* display: none; */
+  width: 80px; /*设置为0 隐藏自定义菜单*/
+  overflow: hidden; /*隐藏溢出的元素*/
+  box-shadow: 0 1px 1px #888,1px 0 1px #ccc;
+  position: absolute; /*自定义菜单相对与body元素进行定位*/
+  background:slategray;
+}
+.menu {
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+  color:black
+}
+
+#text {
+  color:black;
+  height: 50px;
+  width: 100px;
+}
+
+/*文字不可被选中*/
+body{
+  -moz-user-select:none;/*火狐*/
+  -webkit-user-select:none;/*webkit浏览器*/
+  -ms-user-select:none;/*IE10*/
+  -khtml-user-select:none;/*早期浏览器*/
+  user-select:none;
+}
